@@ -6,6 +6,6 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY app ./app
+COPY / ./app
 
 CMD "gunicorn", "-b", "8080", "app.app:app"
